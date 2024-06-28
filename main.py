@@ -6,7 +6,11 @@ def main():
     ########################################
     """
     result = True
+    if email[0].isalpha:
+        result = False
 
+    if result == False:
+        print("this is for testing, delete before submission")
     ########################################
     # Do not delete the return statement
     ########################################
