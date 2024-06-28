@@ -6,18 +6,15 @@ def main():
     ########################################
     """
     result = True
-    if email[0].isalpha:
+    if email[0].isalpha() != True:
         result = False
     if len(email) < 5 or len(email) > 30:
         result = False
     if email.find("@") == -1:
         result = False
-    if email.find(".") == -1 or (email.find("@") > email.find(".")):
+    if email.find(".") == -1 or (email.find(".") < email.find("@")):
         result = False
-        
-    
-    if result == False:
-        print("this is for testing, delete before submission")
+  
     ########################################
     # Do not delete the return statement
     ########################################
